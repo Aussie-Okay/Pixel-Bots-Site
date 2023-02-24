@@ -1,7 +1,8 @@
 const darkModeBtn = document.querySelector("#switch");
 const themeLink = document.querySelector("#theme-link");
 
-let isDarkMode = localStorage.getItem("dark-mode") === "true" || getCookie("dark-mode") === "true" || false;
+let isDarkMode = getTheme();
+
 updateDarkMode(); // call this to update the theme based on the dark-mode cookie value
 
 darkModeBtn.addEventListener("click", () => {
@@ -19,6 +20,18 @@ function updateDarkMode() {
   }
   setCookie("dark-mode", isDarkMode);
   localStorage.setItem("dark-mode", isDarkMode);
+}
+
+function getTheme() {
+  const localStorageTheme = localStorage.getItem("dark-mode");
+  const cookieTheme = getCookie("dark-mode");
+  if (localStorageTheme !== null) {
+    return localStorageTheme === "true";
+  } else if (cookieTheme !== null) {
+    return cookieTheme === "true";
+  } else {
+    return true; // default to dark mode
+  }
 }
 
 function setCookie(name, value) {

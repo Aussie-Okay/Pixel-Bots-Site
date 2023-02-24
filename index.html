@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Pixel Bots</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link id="theme-link" href="dark-mode.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/07ec13a69d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,9 +16,10 @@
       <a href="#">Pixel Bots</a>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Contributors</a></li>
-      <li><a href="#">Bots</a></li>
-      <li><a href="#">Support</a></li>
+     <li><a href="#">Contributors</a></li>
+     <li><a href="#">Bots</a></li>
+     <li><a href="#">Support</a></li>
+     <li class="switch" id="switch"><i class="fa-solid fa-sun"></i></li>
     </ul>
     <div class="burger">
       <div class="line1"></div>
@@ -31,19 +33,9 @@
     <h2>Our Bots</h2>
     <div class="bot-container">
       <div class="bot-card">
-        <img src="bot1.png" alt="Bot 1">
-        <h3>Bot 1</h3>
-        <p>Description of Bot 1</p>
-      </div>
-      <div class="bot-card">
-        <img src="bot2.png" alt="Bot 2">
-        <h3>Bot 2</h3>
-        <p>Description of Bot 2</p>
-      </div>
-      <div class="bot-card">
-        <img src="bot3.png" alt="Bot 3">
-        <h3>Bot 3</h3>
-        <p>Description of Bot 3</p>
+        <img src="cat-bot.webp" alt="Cat Bot" class="bot-image">
+        <h3>Cat Bot</h3>
+        <p>A little bot that can give you cute cat images and cool cat facts.</p>
       </div>
     </div>
   </section>
@@ -51,18 +43,22 @@
   <!-- Footer -->
   <footer>
     <div class="footer-container">
-      <div class="footer-logo">
+      <!--<div class="footer-logo">
         <a href="#">Pixel Bots</a>
-      </div>
+      </div>-->
       <div class="footer-links">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
-          <li><a href="help/tos">Terms of Service</a></li>
+          <li><a href="#">Terms of Service</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-copy">
         <p>&copy; 2023 Pixel Bots. All rights reserved.</p>
+      <div class="footer-copy-description">
+        <p>Pixel Bots is not affiliated or endorsed by Guilded, Inc.</p>
+      
+      </div>
       </div>
     </div>
   </footer>

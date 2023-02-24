@@ -1,0 +1,192 @@
+body{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+/* Navigation bar */
+nav {
+  margin-top: 50%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 999;
+  position: relative;
+  border-radius: 20px;
+}
+
+.logo a {
+  color: #21262E;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+  transition: transform 0.3s;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #21262E;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links li:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+/* Burger menu */
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #21262E;
+  margin: 5px;
+}
+
+/* Our bots section */
+.our-bots {
+  background-color: transparent;
+  padding: 50px;
+}
+
+.our-bots h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.bot-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bot-card {
+  border-radius: 15px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.bot-card:hover {
+  transform: translateY(-10px);
+}
+
+.bot-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bot-card h3 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+.bot-card p {
+  margin: 0 20px 20px;
+}
+
+/* Footer */
+footer {
+  border-radius: 30px;
+  text-decoration: none;
+  /*background-color: white;*/
+  color: #fff;
+  padding: 50px;
+  height: 90px;
+}
+
+.footer-container {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li:not(:last-child) {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-copy {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-copy p {
+  font-size: 1.2rem;
+}
+
+/* Dark mode */
+body {
+  background-color: #151A23;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode body {
+  background-color: white;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .footer-links a,
+.dark-mode .footer-copy p {
+  text-decoration: none;
+  color: white;
+}
+
+.dark-mode nav,
+.dark-mode .our-bots,
+.dark-mode footer {
+  text-decoration: none;
+  background-color: white;
+  color: #fff;
+}
+
+.dark-mode .bot-card {
+  background-color: #fff;
+  color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}

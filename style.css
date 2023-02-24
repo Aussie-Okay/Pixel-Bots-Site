@@ -5,7 +5,7 @@ body{
 
 /* Navigation bar */
 nav {
-  font-size: 15px;
+  font-size: 10px;
   margin-top: 50%;
   margin: 15px auto;
   display: flex;
@@ -24,6 +24,7 @@ nav {
 }
 
 .logo a {
+  font-size: 10px;
   color: #21262E;
   font-size: 1.5rem;
   font-weight: bold;
@@ -32,14 +33,14 @@ nav {
 }
 
 .nav-links {
-  font-size: 15px;
+  font-size: 10px;
   display: flex;
   justify-content: space-between;
   width: 30%;
 }
 
 .nav-links li {
-  font-size: 15px;
+  font-size: 10px;
   list-style: none;
   transition: transform 0.3s;
 }

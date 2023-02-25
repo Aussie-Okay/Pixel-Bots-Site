@@ -47,6 +47,20 @@ nav {
   right: 0;
 }
 
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 .logo a {
   color: #E2E8F0;
@@ -55,6 +69,48 @@ nav {
   text-decoration: none;
   font-family: 'Monsterrat', sans-serif;
 }
+
+/*.cookies-warning {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  /*display: flex;
+  z-index: 2;
+  margin-left: 55px;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.cookies-warning button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cookies-warning button:first-of-type {
+  margin-left: 500px;
+}
+
+.cookies-warning a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cookies-warning i {
+  margin-right: 15px;
+}*/
 
 .nav-links {
   display: flex;

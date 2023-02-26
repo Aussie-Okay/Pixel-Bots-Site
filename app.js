@@ -1,3 +1,10 @@
+const hamburgerMenu = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburgerMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 // function to check if cookies are accepted
 /*function cookiesAccepted() {
   return document.cookie.indexOf("cookies-permission=accepted") !== -1;
@@ -85,7 +92,7 @@ darkModeBtn.addEventListener("click", () => {
 function updateDarkMode() {
   if (isDarkMode) {
     themeLink.href = "dark-mode.css";
-    darkModeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    darkModeBtn.innerHTML = '<i class="fas fa-sun"></i>';
   } else {
     themeLink.href = "light-mode.css";
     darkModeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';

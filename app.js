@@ -91,10 +91,10 @@ darkModeBtn.addEventListener("click", () => {
 
 function updateDarkMode() {
   if (isDarkMode) {
-    themeLink.href = "dark-mode.css";
+    themeLink.href = "/dark-mode.css";
     darkModeBtn.innerHTML = '<i class="fas fa-sun"></i>';
   } else {
-    themeLink.href = "light-mode.css";
+    themeLink.href = "/light-mode.css";
     darkModeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
   }
   setCookie("dark-mode", isDarkMode);
